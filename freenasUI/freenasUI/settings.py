@@ -1,5 +1,5 @@
 """
-Django settings for djangoproject project.
+Django settings for freenasUI project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'e1@3ckp+yo&aae-jh5_83f3bvabstxy1hm3$eu+3ibf^=0mpqm'
+SECRET_KEY = 'jc9i)!jff%@ep@pm&8!##(j@qassgjm*(9u_xb#jek=_k(hf_&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -47,9 +47,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'djangoproject.urls'
+ROOT_URLCONF = 'freenasUI.urls'
 
-WSGI_APPLICATION = 'djangoproject.wsgi.application'
+WSGI_APPLICATION = 'freenasUI.wsgi.application'
 
 
 # Database
