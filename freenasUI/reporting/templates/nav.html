@@ -1,3 +1,89 @@
+<style>
+.header{
+   position:absolute;
+   left:0;
+   right:0;
+   top:0;
+   height:50px;
+   background:gray;
+   
+}
+img {
+  position:absolute;
+  left:20px;
+  bottom:5px;
+  
+}
+.menu{
+ position:relative;
+ margin-top:50px;
+ height:50px;
+ background:#d0d0d0;
+ 
+}
+a:hover{
+  background:red;
+}
+.navnewul {
+   position:relative;
+   float:left;
+   margin-left:20px;
+   display:inline-block;
+}
+.navnewli {
+ list-style-type:none;
+}
+.navnewa{
+  display:block;
+  font-size:20px;
+  line-height:50px;
+  padding-left:30px;
+  padding-right:20px;
+  color:#fff;
+}
+.innerdiv {
+font-size:20px;
+position:relative;
+padding-left:20px;
+display:inline;
+}
+a.navlia {
+display:inline-block;
+text-decoration:none;
+line-height:50px;
+padding-left:30px;
+padding-right:20px;
+}
+</style>
 <div>
-<h1>这个导航栏的东西</h1>
+<div class="header">
+<img src="{{STATIC_URL}}images/logo.png" />
+</div>
+<div style="position:relative;margin-top:50px;"></div>
+<div class="menu">
+<div class="innerdiv">
+<a class="navlia" href="#">首页</a>
+</div>
+<div class="innerdiv">
+<a class="navlia" href="#">系统</a>
+</div>
+<div class="innerdiv">
+<a class="navlia" href="#">存储池</a>
+</div>
+<div class="innerdiv">
+<a class="navlia" href="#">共享</a>
+</div>
+<div class="innerdiv">
+<a class="navlia" href="#">iscsi设置</a>
+</div>
+<div class="innerdiv">
+<a class="navlia" href="#">网络</a>
+</div>
+<div class="innerdiv">
+<a class="navlia" href="#">设置</a>
+</div>
+<div>
+
+</div>
+</div>
 </div>
