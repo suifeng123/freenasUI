@@ -1,21 +1,36 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html ng-app="HIKSPACEApp">
 <head>
 <title>HIKDATA</title>
 <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/bootstrap-theme.css" />
+
 <script type="text/javascript" src="{{STATIC_URL}}js/angular.js"></script>
+
 <style>
 .reporting {
-  
+  position:absolute;
+  left:150px;
+  right:0;
+  bottom:0;
+  top:100px;
 }
 </style>
+<script type="text/javascript">
+var hikApp = angular.module("HIKSPACEApp",[]);
+hikApp.controller("ToDoCtrl",function($scope){
+	$scope.flag = true;
+	$scope.hh = function() {
+		console.log("王圣文");
+	}
+});
+</script>
 </head>
-<body>
+<body ng-controller="ToDoCtrl">
 {% include 'nav.html' %}
 <div class="reporting">
-
+  <button ng-click="hh()" class="btn btn-success btn-lg">按钮</button>
 </div>
+
 </body>
-</head>
 </html>

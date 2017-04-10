@@ -98,7 +98,6 @@ a.little:hover{
 }
 </style>
 
-<div>
 <div class="header">
 <img src="{{STATIC_URL}}images/logo.png" />
 </div>
@@ -113,6 +112,7 @@ a.little:hover{
 <div class="innerdiv">
 <a class="navlia" href="#">存储服务</a>
 </div>
+
 <div class="innerdiv">
 <a class="navlia" href="#">共享</a>
 </div>
@@ -127,7 +127,7 @@ a.little:hover{
 </div>
 
 </div>
-<div class="leftbar">
+<div class="leftbar" ng-controller="leftCtrl">
  <div class="leftmenu">
    <a class="lefta" href="#">首页</a>
  </div>
@@ -136,7 +136,18 @@ a.little:hover{
    
  </div>
  <div class="leftmenu">
-   <a class="lefta" href="#">存储服务</a>
+   <a class="lefta" href="#" ng-click="show()">存储服务</a>
+ </div>
+ <div ng-if="flag">
+  <div class="leftmenu" style="height:30px;">
+   <a class="lefta" style="font-size:10px;" href="#">存储池</a>
+ </div>
+  <div class="leftmenu" style="height:30px;">
+   <a class="lefta" style="font-size:10px;" href="#">文件系统</a>
+ </div>
+  <div class="leftmenu" style="height:30px;">
+   <a class="lefta" style="font-size:10px;" href="#">卷</a>
+ </div>
  </div>
 
  <div class="leftmenu">
@@ -152,4 +163,17 @@ a.little:hover{
    <a class="lefta" href="#">设置</a>
  </div>
 </div>
-</div>
+<script type="text/javascript">
+hikApp.controller("leftCtrl",function($scope){
+	$scope.flag = false;
+	$scope.show = function() {
+		console.log("开始进行展示");
+		if($scope.flag==false){
+			$scope.flag = true;
+		}else{
+			$scope.flag = false;
+			
+		}
+	}
+});
+</script>
