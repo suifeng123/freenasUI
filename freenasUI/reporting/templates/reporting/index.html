@@ -20,16 +20,13 @@
 var hikApp = angular.module("HIKSPACEApp",[]);
 hikApp.controller("ToDoCtrl",function($scope){
 	$scope.flag = true;
-	$scope.hh = function() {
-		console.log("王圣文");
-	}
 });
 </script>
 </head>
 <body ng-controller="ToDoCtrl">
 {% include 'nav.html' %}
 <div class="reporting">
-  <button ng-click="hh()" class="btn btn-success btn-lg">按钮</button>
+ 
 </div>
 
 </body>
