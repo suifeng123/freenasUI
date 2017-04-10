@@ -54,7 +54,50 @@ line-height:50px;
 padding-left:30px;
 padding-right:20px;
 }
+a.lefta {
+   line-height:100%;
+   padding-left:20px;
+   text-decoration:none;
+   font-size:20px;
+   display:block;
+   height:100%;
+   padding-top:10px;
+}
+.leftbar {
+   position:absolute;
+   top:100px;
+   bottom: 0;
+   left:0;
+   width:150px;
+   background:#BBFFFF;
+   overflow:auto;
+   border:1px solid grey;
+   text-align:center;
+}
+.leftmenu {
+  position: relative;
+  top:60px;
+  height:40px;
+  width:150px;
+}
+.leftlittle {
+   position:relative;
+   margin-top:30px;
+   height:4%;
+   width:100%;
+}
+a.little {
+  font-size:10px;
+  display:block;
+  width:100%;
+  heght:20px;
+  position:absolute;
+}
+a.little:hover{
+  background:#D1E9E9;
+}
 </style>
+
 <div>
 <div class="header">
 <img src="{{STATIC_URL}}images/logo.png" />
@@ -68,7 +111,7 @@ padding-right:20px;
 <a class="navlia" href="#">系统</a>
 </div>
 <div class="innerdiv">
-<a class="navlia" href="#">存储池</a>
+<a class="navlia" href="#">存储服务</a>
 </div>
 <div class="innerdiv">
 <a class="navlia" href="#">共享</a>
@@ -82,8 +125,31 @@ padding-right:20px;
 <div class="innerdiv">
 <a class="navlia" href="#">设置</a>
 </div>
-<div>
 
 </div>
+<div class="leftbar">
+ <div class="leftmenu">
+   <a class="lefta" href="#">首页</a>
+ </div>
+ <div class="leftmenu">
+   <a class="lefta" href="#">系统</a>
+   
+ </div>
+ <div class="leftmenu">
+   <a class="lefta" href="#">存储服务</a>
+ </div>
+
+ <div class="leftmenu">
+   <a class="lefta" href="#">共享</a>
+ </div>
+ <div class="leftmenu">
+   <a class="lefta" href="#">iscsi设置</a>
+ </div>
+ <div class="leftmenu">
+   <a class="lefta" href="#">网络</a>
+ </div>
+ <div class="leftmenu">
+   <a class="lefta" href="#">设置</a>
+ </div>
 </div>
 </div>
