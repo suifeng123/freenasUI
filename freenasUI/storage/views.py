@@ -11,6 +11,7 @@ def makepool(request):
     print "this is a all method"
     if request.method=="POST":
         print "this is post method"
+        print "get data here"
         return render(request,"storage/pool.html")
     else:
         print "this is get  method"
