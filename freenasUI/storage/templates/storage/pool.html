@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="HIKSPACEApp">
+<head>
+<title>HIKDATA</title>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/bootstrap-theme.css" />
+
+<script type="text/javascript" src="{{STATIC_URL}}js/angular.js"></script>
+
+<style>
+.pool{
+  position:absolute;
+  left:150px;
+  right:0;
+  bottom:0;
+  top:100px;
+  magin:0;
+  padding:0;
+}
+.newpool {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  overflow:auto;
+}
+.poolheader {
+   position:relative;
+   float:left;
+   width:60px;
+   height:20px;
+}
+a {
+ text-decoration:none;
+ 
+}
+.newa {
+  font-size:20px;
+  
+}
+</style>
+<script type="text/javascript">
+var hikApp = angular.module("HIKSPACEApp",[]);
+hikApp.controller("poolCtrl",function($scope){
+	$scope.flag = true;
+});
+</script>
+</head>
+<body ng-controller="poolCtrl">
+{% include 'nav.html' %}
+<div class="pool">
+   <div class="newpool">
+       <a class="newa">存储池</a>
+   </div>
+   <div style="position:absolute;top:30px;">
+      <button class="btn btn-success btn-lg"><a>创建存储池
+      </a></button> 
+   </div>
+   <div style="position:relative;top:70px;width:100px;height:100px;background:red;"></div>
+   
+</div>
+
+</body>
+</html>
