@@ -12,4 +12,5 @@ urlpatterns = patterns('',
     url(r'^$','reporting.views.index',name="reportingindex"),
     url(r'^storage/$','storage.views.index',name="storageindex"),
     url(r'^storage/pool/$','storage.views.pool',name="storagepool"),
+    url(r'^storage/pool/makepool/$','storage.views.makepool',name="storagemakepool"),
 )

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="HIKSPACEApp">
+<head>
+<title>HIKDATA</title>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/bootstrap-theme.css" />
+
+<script type="text/javascript" src="{{STATIC_URL}}js/angular.js"></script>
+
+<style>
+.makepool {
+  position:absolute;
+  left:150px;
+  right:0;
+  bottom:0;
+  top:100px;
+}
+</style>
+<script type="text/javascript">
+var hikApp = angular.module("HIKSPACEApp",[]);
+hikApp.controller("makeCtrl",function($scope,$http){
+	$scope.flag = true;
+	$scope.test = function() {
+		console.log("开始进行回到");
+		
+		
+		
+	}
+});
+</script>
+</head>
+<body ng-controller="makeCtrl">
+{% include 'nav.html' %}
+<form action="/storage/pool/makepool/" method="post">
+{% csrf_token %}
+<div class="makepool">
+   <input type="submit" class="btn btn-lg btn-success" value="提交" />
+</div>
+</form>
+</body>
+</html>
